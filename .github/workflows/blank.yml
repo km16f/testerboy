@@ -21,6 +21,7 @@ jobs:
       - name: Run a one-line script
         run: |
           set
-          echo "Hello, github.event.pull_request"
+          echo "Hello,  $GITHUB_HEAD_REF"
+          python test.py $GITHUB_HEAD_REF
 
 
